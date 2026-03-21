@@ -79,9 +79,25 @@
       .indented {
         text-indent: 2rem;
       }
+      marquee {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #16213e;
+        padding: 0.5rem 0;
+        z-index: 999;
+      }
     </style>
   </head>
   <body>
+    <marquee
+      scrollamount="30"
+      direction="left"
+      style="color: #a0c4ff; font-weight: 700; font-size: 1.5rem; width: 100%"
+    >
+      LEEROY JENKINS!!!
+    </marquee>
     <div class="card">
       <h1>HTML NOTES by idan3e5</h1>
       <p class="source">All information is sourced from freeCodeCamp.com</p>
@@ -379,7 +395,6 @@
       </p>
       <p>Example:</p>
       <img
-        class="example-img"
         src="boilerplate.png"
         alt="Syntax example HTML boilerplate."
       />
