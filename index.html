@@ -76,6 +76,9 @@
       strong {
         color: #e0e0e0;
       }
+      .indented {
+        text-indent: 2rem;
+      }
     </style>
   </head>
   <body>
@@ -85,7 +88,7 @@
 
       <h2>Chapter 1</h2>
 
-      <h3>HTML's role in the internet</h3>
+      <h3>HTMLs role in the internet</h3>
       <p>
         HTML, which stands for <strong>Hypertext Markup Language</strong>, is a
         markup language for creating web pages. When you visit a website and see
@@ -181,7 +184,7 @@
         the attribute.
       </p>
 
-      <h3>HREF and TARGET attributes</h3>
+      <h3>HREF and TARGET Attributes</h3>
       <p>
         This first example uses the href and target attributes. The href
         attribute specifies the URL of a link and the target attribute specifies
@@ -203,7 +206,7 @@
         new browser tab.
       </p>
 
-      <h3>SRC and ALT attributes</h3>
+      <h3>SRC and ALT Attributes</h3>
       <p>
         Other common attributes are the src, and alt, or alternative, attribute
         - which is used to specify the source of an image and provide
@@ -211,10 +214,10 @@
       </p>
       <p>
         <strong
-          >Example:<br><br>
-          &lt;img<br>
-          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg"<br>
-          alt="Cats running in the dirt." <br>/&gt;</strong
+          >Example:<br /><br />
+          &lt;img<br />
+          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg"<br />
+          alt="Cats running in the dirt." <br />/&gt;</strong
         >
       </p>
       <p>Here is an example of a <strong>working</strong> image:</p>
@@ -241,7 +244,7 @@
         physical spaces.
       </p>
 
-      <h3>CHECKED attribute</h3>
+      <h3>CHECKED Attribute</h3>
       <p>
         Some attributes are a little unique with their syntax like the checked
         attribute.
@@ -264,7 +267,7 @@
         boolean attribute.
       </p>
 
-      <h3>BOOLEAN attributes</h3>
+      <h3>BOOLEAN Attributes</h3>
       <p>
         There are several common boolean attributes you will encounter in HTML,
         such as <strong>disabled</strong>, <strong>readonly</strong>, and
@@ -281,6 +284,164 @@
         the behavior and appearance of elements on a webpage. Understanding how
         to use attributes is essential for creating interactive and accessible
         web content.
+      </p>
+
+      <h2>Chapter 3</h2>
+
+      <h3>LINK Element</h3>
+
+      <p>
+        The link element is used to link to external resources like stylesheets
+        and site icons. Here is the basic syntax for using the link element for
+        an external CSS file:
+      </p>
+
+      <p>
+        <strong>&lt;link rel="stylesheet" href="./styles.css" /&gt;</strong>
+      </p>
+
+      <p>
+        The <strong>rel</strong> attribute is used to specify the relationship
+        between the linked resource and the HTML document. In this situation, we
+        need to specify that this linked resource is a
+        <strong>stylesheet.</strong>
+      </p>
+
+      <p>
+        It is considered best practice to separate your HTML and CSS in
+        different files. Developers will use the <strong>link</strong> element
+        for their external CSS file instead of writing everything in the HTML
+        document.
+      </p>
+
+      <p>
+        The <strong>href</strong> attribute is used to specify the location of
+        the URL for the external resource.
+      </p>
+
+      <p>
+        The <strong>dot</strong> followed by a <strong>forward slash</strong> in
+        the example tells the computer to look in the current folder, or
+        directory, for the styles.css file.
+      </p>
+
+      <p>
+        <strong>
+          Note: The link element should always be placed inside the head
+          element.
+        </strong>
+      </p>
+
+      <h3>Preconnect</h3>
+      <p>
+        A <strong>preconnect</strong> value for the rel attribute tells the
+        browser to create an early connection to the value specified in the href
+        attribute. This is done to speed up loading times for these external
+        resources.
+      </p>
+      <p>Example:</p>
+      <p>
+        <strong>
+          &lt;link rel="preconnect" href="https://fonts.googleapis.com" /&gt;<br />
+          &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin
+          /&gt;<br />
+          &lt;link
+          href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+          rel="stylesheet"/&gt;
+        </strong>
+      </p>
+
+      <h3>Favicon</h3>
+
+      <p>
+        Another common use case for the link element is to link to icons. Here
+        is an example of linking to a favicon:
+      </p>
+      <p>Example:</p>
+      <p>
+        <strong> &lt;link rel="icon" href="favicon.ico" /&gt; </strong>
+      </p>
+
+      <p>
+        A favicon, which is short for favorite icon, is a small icon typically
+        displayed in the browser tab next to the site title. A lot of websites
+        will use a favicon to display their brand icon.
+      </p>
+
+      <h3>HTML Boilerplate</h3>
+
+      <p>
+        What is the HTML boilerplate, you ask? It's like a ready-made template
+        for your webpages. Think of it as the foundation of a house. A
+        boilerplate includes the basic structure and essential elements every
+        HTML document needs. It saves you time and helps ensure your pages are
+        set up properly.
+      </p>
+      <p>Example:</p>
+      <img
+        class="example.img"
+        src="boilerplate.png"
+        alt="Syntax example HTML boilerplate."
+      />
+      <p>
+        <strong>DOCTYPE</strong> declaration tells browsers which version of
+        HTML you're using.
+      </p>
+      <p>
+        <strong>HTML</strong> wraps around all your content, and can specify the
+        language of your page.
+      </p>
+      <p>
+        <strong>HEAD</strong> section contains important behind-the-scenes
+        information.
+      </p>
+      <p>
+        <strong>BODY</strong> contains everything that is actually visible and
+        displayed on the webpage.
+      </p>
+      <p>
+        <strong>META</strong> is your site's metadata, it has details like
+        character encoding, and how websites like Facebook should preview your
+        page's link.
+      </p>
+      <p>
+        <strong>TITLE</strong> determines the text that appears in the browser
+        tab or window.
+      </p>
+      <p>
+        In summary, a <strong>boilerplate</strong> ensures your pages are
+        structured correctly and work well across different browsers. Using a
+        boilerplate helps you avoid common mistakes and follow best practices.
+        It's a great starting point for any web project. Remember, you can
+        customize your own boilerplate to fit your needs. As you gain
+        experience, you might add your own preferred elements or meta tags.
+      </p>
+
+      <h3>UTF-8</h3>
+
+      <p>
+        UTF-8, or UCS Transformation Format 8, is a standardized character
+        encoding widely used on the web. Character encoding is the method
+        computers use to store characters as data. Essentially, all text on a
+        web page is a sequence of characters stored as one or more bytes. In
+        computing, a byte is a unit of data consisting of 8 bits, or binary
+        digits. UTF-8 supports every character in the Unicode character set -
+        and this includes characters and symbols from all writing systems,
+        languages, and technical symbols.
+      </p>
+
+      <p>
+        Here is an example of using the meta element with the charset attribute
+        to set the character encoding to UTF-8:
+      </p>
+      <p><strong> &lt;meta charset="UTF-8" /&gt; </strong></p>
+      <p>
+        By setting the character encoding to UTF-8, it will ensure that the
+        accented "e" character (é) is displayed correctly on the page.
+      </p>
+      <p>
+        For each new project you create, you should include this meta element
+        with the <strong>charset</strong> attribute set to UTF-8.
       </p>
     </div>
   </body>
