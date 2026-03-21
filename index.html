@@ -36,6 +36,9 @@
         margin: 0.5rem 0;
         color: #e0e0e0;
       }
+      .example-img {
+        width: 300px;
+      }
       input {
         display: block;
         margin: 0.5rem 0 1rem 0;
@@ -214,12 +217,20 @@
         >
       </p>
       <p>Here is an example of a <strong>working</strong> image:</p>
-      <img src="corgishroom.jpeg" alt="A corgi in a mushroom costume." />
+      <img
+        class="example-img"
+        src="corgishroom.jpeg"
+        alt="A corgi in a mushroom costume."
+      />
       <p>
         Here is an example of a <strong>broken</strong> image link, where only
         the alt text is displayed:
       </p>
-      <img src="corgshroom.jpeg" alt="A corgi in a mushroom costume." />
+      <img
+        class="example-img"
+        src="corgshroom.jpeg"
+        alt="A corgi in a mushroom costume."
+      />
       <p>
         Similar to the href attribute, the src attribute is required because it
         specifies the image file to be displayed. The alt attribute is not
