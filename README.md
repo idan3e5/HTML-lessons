@@ -13,6 +13,12 @@ A personal HTML reference page documenting key concepts learned from [freeCodeCa
 - SRC and ALT attributes
 - CHECKED attribute
 - BOOLEAN attributes
+## Chapter 3
+- LINK element
+- Preconnect
+- Favicon
+- HTML Boilerplate
+- UTF-8
 
 ## Live Demo
 [View the page here](https://idan3e5.github.io/HTML-lessons/)
