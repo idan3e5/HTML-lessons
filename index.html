@@ -1,123 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>HTML Notes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Barlow', sans-serif;
-            background: #f0f4f8;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-            margin: 0;
-            padding: 2rem 0;
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            text-align: left;
-            max-width: 800px;
-            width: 100%;
-            padding: 2rem 2rem 3rem 2rem;
-        }
-        img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin: 0.5rem 0;
-        }
-        input {
-            display: block;
-            margin: 0.5rem 0 1rem 0;
-        }
-        .source {
-            font-size: 0.85rem;
-            color: #999;
-            font-style: italic;
-            margin-bottom: 1rem;
-        }
-        h1 { color: #333; font-weight: 700; }
-        h3 { color: #444; margin-top: 1.5rem; }
-        p  { color: #666; font-weight: 400; }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Barlow", sans-serif;
+        background: #f0f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        margin: 0;
+        padding: 2rem 0;
+      }
+      .card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        max-width: 800px;
+        width: 100%;
+        padding: 2rem 2rem 3rem 2rem;
+      }
+      img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin: 0.5rem 0;
+      }
+      input {
+        display: block;
+        margin: 0.5rem 0 1rem 0;
+      }
+      .source {
+        font-size: 0.85rem;
+        color: #999;
+        font-style: italic;
+        margin-bottom: 1rem;
+      }
+      h1 {
+        color: #333;
+        font-weight: 700;
+      }
+      h3 {
+        color: #444;
+        margin-top: 1.5rem;
+      }
+      p {
+        color: #666;
+        font-weight: 400;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="card">
-        <h1>HTML NOTES by idan3e5</h1>
-        <p class="source">All information is sourced from freeCodeCamp.com</p>
-        
-        <h2>Chapter 1</h2>
+      <h1>HTML NOTES by idan3e5</h1>
+      <p class="source">All information is sourced from freeCodeCamp.com</p>
 
-        <h3>HTML's role in the internet</h3>
-        <p>HTML, which stands for <strong>Hypertext Markup Language</strong>, is a markup language for creating web pages. When you visit a website and see content like paragraphs, headings, links, images, and videos; that's HTML.</p>
-        <p>Here is a small example using HTML elements: </p>
-        <p><strong>&lt;h1&gt;Main heading element&lt;/h1&gt; = Main heading element<br><br>&lt;p&gt;I am a paragraph element.&lt;/p&gt; = I am paragraph element.</strong></p>
-        
-        <h3>Elements</h3>
-        <p>HTML represents the content and structure of a webpage through the use of elements. Most elements will have an opening tag and a closing tag. Sometimes those tags are referred to as start and end tags. In between those two tags, you will have the content. This content can be text or other HTML elements.</p>
-        
-        <p>Both opening and closing tags start with a left angle bracket <strong>(&lt;)</strong>, and end with a right angle bracket <strong>(&gt;)</strong>, with the tag name placed between these angle brackets. While HTML tag names are case-insensitive, it is a widely accepted convention and best practice to write them in lowercase.</p>
-        
-        <p>Here is a closer look at just the opening and closing paragraph tags:<br><br><strong>&lt;p&gt;EXAMPLE&lt;/p&gt; = EXAMPLE</strong></p>
-        
-        <h3>Void Elements</h3>
-        <p>What distinguishes an opening tag from a closing tag is the forward slash <strong>(/)</strong> placed immediately after the left angle bracket in a closing tag. Some HTML elements do not have a closing tag. These are known as void elements.</p>
-        
-        <p>Here is an example of an image element which is a void element:<br><br><strong>&lt;img&gt;</strong></p>
-        
-        <p>Notice that this image element does not have the closing tag and it does not have any content. Void elements cannot have any content and only have a start tag.<br><br>Sometimes you will see void elements that use a <strong>/</strong> before the <strong>></strong> like this:<br><br><strong>&lt;img /&gt;</strong></p>
-        
-        <p>While many code formatters like Prettier, will choose to include the / in void elements, the HTML spec states that the presence of the / "does not mark the start tag as self-closing but instead is unnecessary and has no effect of any kind".</p>
-        
-        <p>In real world development, you will see both forms so it is important to be familiar with both.</p>
-        
-        <p>If you wanted to display an image, you will need to include a couple of attributes inside your image element. An attribute is a special value used to adjust the behavior for an HTML element, which brings us to our next chapter.</p>
-        
-        <h2>Chapter 2</h2>
+      <h2>Chapter 1</h2>
 
-        <h3>Attributes</h3>
-        <p>An attribute is a value placed inside the opening tag of an HTML element. Attributes provide additional information about the element or specify how the element should behave. Here is the basic syntax for an attribute:</p>
-        <p><strong>&lt;element attribute="value"&gt;&lt;/element&gt;</strong></p>
-        <p>The attribute name is followed by an <strong>equal sign (=)</strong> and a value in quotes. The value can be a string or a number, depending on the attribute.</p>
-        
-        <h3>HREF and TARGET attributes</h3>
-        <p>This first example uses the href and target attributes. The href attribute specifies the URL of a link and the target attribute specifies where to open the link.</p>
-        <p><strong>&lt;a href="https://www.freecodecamp.org" target="_blank"&gt;Visit freeCodeCamp&lt;/a&gt;</strong></p>
-        <a href="https://www.freecodecamp.org" target="_blank">Visit freeCodeCamp</a>
-        <p>Without the href attribute, the link would not work because there would be no destination URL. So you must include this href attribute to make the link functional. The target="_blank" enables the link to open in a new browser tab.</p>
-        
-        <h3>SRC and ALT attributes</h3>
-        <p>Other common attributes are the src, and alt, or alternative, attribute - which is used to specify the source of an image and provide alternative descriptive text for the image, respectively.</p>
-        <p><strong>&lt;img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" alt="Cats running in the dirt." &gt;</strong></p>
-        <p>Here is an example of a <strong>working</strong> image:</p>
-        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" alt="Cats running in the dirt.">
-        <p>Here is an example of a <strong>broken</strong> image link, where only the alt text is displayed:</p>
-        <img src="ttps://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" alt="Cats running in the dirt.">
-        <p>Similar to the href attribute, the src attribute is required because it specifies the image file to be displayed. The alt attribute is not required, but it is recommended for accessibility purposes. Accessibility means making sure that everyone, including those with disabilities, can use and understand things like websites, apps, and physical spaces.</p>
+      <h3>HTML's role in the internet</h3>
+      <p>
+        HTML, which stands for <strong>Hypertext Markup Language</strong>, is a
+        markup language for creating web pages. When you visit a website and see
+        content like paragraphs, headings, links, images, and videos; that's
+        HTML.
+      </p>
+      <p>Here is a small example using HTML elements:</p>
+      <p>
+        <strong
+          >&lt;h1&gt;Main heading element&lt;/h1&gt; = Main heading element<br /><br />&lt;p&gt;I
+          am a paragraph element.&lt;/p&gt; = I am paragraph element.</strong
+        >
+      </p>
 
-        <h3>CHECKED attribute</h3>
-        <p>Some attributes are a little unique with their syntax like the checked attribute.</p>
-        <p><strong>WITH &lt;input type="checkbox" checked /&gt;</strong></p>
-        <input type="checkbox" checked />
-        <p><strong>WITHOUT &lt;input type="checkbox" /&gt;</strong></p>
-        <input type="checkbox" />
-        <p>In the following example, we have an <strong>input</strong> element with the type attribute set to checkbox. <strong>Inputs</strong> are used to collect data from users, and the type attribute specifies the type of input. In this case, this input is a checkbox.</p>
-        <p>The checked attribute is used to specify that the checkbox should be checked by default. The checked attribute does not require a value. If it is present, the checkbox will be checked by default. If the attribute is not present, the checkbox will be unchecked. This is known as a boolean attribute.</p>
-        
-        <h3>BOOLEAN attributes</h3>
-        <p>There are several common boolean attributes you will encounter in HTML, such as <strong>disabled</strong>, <strong>readonly</strong>, and <strong>required</strong>. These attributes are used to specify the state of an element, such as whether it is disabled, read-only, or required.</p>
-        <p><strong>WITH &lt;input type="text" disabled&gt;</strong></p>
-        <input type="text" disabled>
-        <p><strong>WITHOUT &lt;input type="text"&gt;</strong></p>
-        <input type="text">
-        <p><strong>HTML</strong> has many attributes that can be used to customize the behavior and appearance of elements on a webpage. Understanding how to use attributes is essential for creating interactive and accessible web content.</p>
-    
+      <h3>Elements</h3>
+      <p>
+        HTML represents the content and structure of a webpage through the use
+        of elements. Most elements will have an opening tag and a closing tag.
+        Sometimes those tags are referred to as start and end tags. In between
+        those two tags, you will have the content. This content can be text or
+        other HTML elements.
+      </p>
+
+      <p>
+        Both opening and closing tags start with a left angle bracket
+        <strong>(&lt;)</strong>, and end with a right angle bracket
+        <strong>(&gt;)</strong>, with the tag name placed between these angle
+        brackets. While HTML tag names are case-insensitive, it is a widely
+        accepted convention and best practice to write them in lowercase.
+      </p>
+
+      <p>
+        Here is a closer look at just the opening and closing paragraph tags:<br /><br /><strong
+          >&lt;p&gt;EXAMPLE&lt;/p&gt; = EXAMPLE</strong
+        >
+      </p>
+
+      <h3>Void Elements</h3>
+      <p>
+        What distinguishes an opening tag from a closing tag is the forward
+        slash <strong>(/)</strong> placed immediately after the left angle
+        bracket in a closing tag. Some HTML elements do not have a closing tag.
+        These are known as void elements.
+      </p>
+
+      <p>
+        Here is an example of an image element which is a void element:<br /><br /><strong
+          >&lt;img&gt;</strong
+        >
+      </p>
+
+      <p>
+        Notice that this image element does not have the closing tag and it does
+        not have any content. Void elements cannot have any content and only
+        have a start tag.<br /><br />Sometimes you will see void elements that
+        use a <strong>/</strong> before the <strong>></strong> like this:<br /><br /><strong
+          >&lt;img /&gt;</strong
+        >
+      </p>
+
+      <p>
+        While many code formatters like Prettier, will choose to include the /
+        in void elements, the HTML spec states that the presence of the / "does
+        not mark the start tag as self-closing but instead is unnecessary and
+        has no effect of any kind".
+      </p>
+
+      <p>
+        In real world development, you will see both forms so it is important to
+        be familiar with both.
+      </p>
+
+      <p>
+        If you wanted to display an image, you will need to include a couple of
+        attributes inside your image element. An attribute is a special value
+        used to adjust the behavior for an HTML element, which brings us to our
+        next chapter.
+      </p>
+
+      <h2>Chapter 2</h2>
+
+      <h3>Attributes</h3>
+      <p>
+        An attribute is a value placed inside the opening tag of an HTML
+        element. Attributes provide additional information about the element or
+        specify how the element should behave. Here is the basic syntax for an
+        attribute:
+      </p>
+      <p><strong>&lt;element attribute="value"&gt;&lt;/element&gt;</strong></p>
+      <p>
+        The attribute name is followed by an <strong>equal sign (=)</strong> and
+        a value in quotes. The value can be a string or a number, depending on
+        the attribute.
+      </p>
+
+      <h3>HREF and TARGET attributes</h3>
+      <p>
+        This first example uses the href and target attributes. The href
+        attribute specifies the URL of a link and the target attribute specifies
+        where to open the link.
+      </p>
+      <p>
+        <strong
+          >&lt;a href="https://www.freecodecamp.org" target="_blank"&gt;Visit
+          freeCodeCamp&lt;/a&gt;</strong
+        >
+      </p>
+      <a href="https://www.freecodecamp.org" target="_blank"
+        >Visit freeCodeCamp</a
+      >
+      <p>
+        Without the href attribute, the link would not work because there would
+        be no destination URL. So you must include this href attribute to make
+        the link functional. The target="_blank" enables the link to open in a
+        new browser tab.
+      </p>
+
+      <h3>SRC and ALT attributes</h3>
+      <p>
+        Other common attributes are the src, and alt, or alternative, attribute
+        - which is used to specify the source of an image and provide
+        alternative descriptive text for the image, respectively.
+      </p>
+      <p>
+        <strong
+          >&lt;img
+          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg"
+          alt="Cats running in the dirt." &gt;</strong
+        >
+      </p>
+      <p>Here is an example of a <strong>working</strong> image:</p>
+      <img
+        src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg"
+        alt="Cats running in the dirt."
+      />
+      <p>
+        Here is an example of a <strong>broken</strong> image link, where only
+        the alt text is displayed:
+      </p>
+      <img
+        src="ttps://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg"
+        alt="Cats running in the dirt."
+      />
+      <p>
+        Similar to the href attribute, the src attribute is required because it
+        specifies the image file to be displayed. The alt attribute is not
+        required, but it is recommended for accessibility purposes.
+        Accessibility means making sure that everyone, including those with
+        disabilities, can use and understand things like websites, apps, and
+        physical spaces.
+      </p>
+
+      <h3>CHECKED attribute</h3>
+      <p>
+        Some attributes are a little unique with their syntax like the checked
+        attribute.
+      </p>
+      <p><strong>WITH &lt;input type="checkbox" checked /&gt;</strong></p>
+      <input type="checkbox" checked />
+      <p><strong>WITHOUT &lt;input type="checkbox" /&gt;</strong></p>
+      <input type="checkbox" />
+      <p>
+        In the following example, we have an <strong>input</strong> element with
+        the type attribute set to checkbox. <strong>Inputs</strong> are used to
+        collect data from users, and the type attribute specifies the type of
+        input. In this case, this input is a checkbox.
+      </p>
+      <p>
+        The checked attribute is used to specify that the checkbox should be
+        checked by default. The checked attribute does not require a value. If
+        it is present, the checkbox will be checked by default. If the attribute
+        is not present, the checkbox will be unchecked. This is known as a
+        boolean attribute.
+      </p>
+
+      <h3>BOOLEAN attributes</h3>
+      <p>
+        There are several common boolean attributes you will encounter in HTML,
+        such as <strong>disabled</strong>, <strong>readonly</strong>, and
+        <strong>required</strong>. These attributes are used to specify the
+        state of an element, such as whether it is disabled, read-only, or
+        required.
+      </p>
+      <p><strong>WITH &lt;input type="text" disabled&gt;</strong></p>
+      <input type="text" disabled />
+      <p><strong>WITHOUT &lt;input type="text"&gt;</strong></p>
+      <input type="text" />
+      <p>
+        <strong>HTML</strong> has many attributes that can be used to customize
+        the behavior and appearance of elements on a webpage. Understanding how
+        to use attributes is essential for creating interactive and accessible
+        web content.
+      </p>
     </div>
-</body>
+  </body>
 </html>
