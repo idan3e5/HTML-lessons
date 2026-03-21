@@ -3,6 +3,11 @@
 A personal HTML reference page documenting key concepts learned from [freeCodeCamp](https://www.freecodecamp.org).
 
 ## Topics Covered
+## Chapter 1
+- HTML's role in the internet
+- Elements
+- Void Elements
+## Chapter 2
 - Attributes
 - HREF and TARGET attributes
 - SRC and ALT attributes
