@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>HTML Notes</title>
-    <link
-      href="favicon.ico"
-      rel="icon"
-    />  
+    <link href="favicon.ico" rel="icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -452,6 +449,47 @@
       <p>
         For each new project you create, you should include this meta element
         with the <strong>charset</strong> attribute set to UTF-8.
+      </p>
+
+      <h2>Chapter 4</h2>
+      <p>
+        The <strong>div</strong> element is used as a container to group other
+        elements.
+      </p>
+      <p>Example:</p>
+      <p>&lt;div&gt;</p>
+      <p class="indented">
+        &lt;p&gt;Example paragraph within div element.&lt;/p&gt;
+      </p>
+      <p>&lt;/div&gt;</p>
+      <p>
+        You will mainly use the <strong>div</strong> element when you want to
+        group HTML elements that will share a set of CSS styles. You will learn
+        more about CSS in future lessons and workshops.
+      </p>
+      <p>
+        Even though the <strong>div</strong> element is commonly used in real
+        world codebases, you should be careful not to overuse it. There are
+        times when another element would be more appropriate.
+      </p>
+      <p>
+        For example, if you wanted to divide up your content into
+        <strong>sections</strong>, then the section element would be more
+        appropriate than a div element.
+      </p>
+      <p>Example:</p>
+      <p>&lt;section&gt;</p>
+      <p class="indented">
+        &lt;p&gt;Example paragraph within section element.&lt;/p&gt;
+      </p>
+      <p>&lt;/section&gt;</p>
+      <p>
+        The <strong>section</strong> element has semantic meaning over the div
+        element which is not semantic. Semantics are the meaning of words or
+        phrases in a language. In HTML, which is a language, elements have their
+        own semantic meaning too. So, this means if you use a section element,
+        the browser will pick up its semantic meaning and understand to treat
+        this as a section - on desktops, mobiles, you name it.
       </p>
     </div>
   </body>
