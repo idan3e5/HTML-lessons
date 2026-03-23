@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  background: #1a1a2e;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 4rem 0 2rem 0;
+}
+.card {
+  background: #16213e;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem 2rem 3rem 2rem;
+}
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  color: #e0e0e0;
+}
+.example-img {
+  width: 300px;
+}
+input {
+  display: block;
+  margin: 0.5rem 0 1rem 0;
+  background: #0f3460;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.source {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+h1 {
+  color: #e0e0e0;
+  font-weight: 700;
+}
+h2 {
+  color: #e0e0e0;
+  font-weight: 700;
+}
+h3 {
+  color: #a0c4ff;
+  margin-top: 1.5rem;
+}
+p {
+  color: #b0b0b0;
+  font-weight: 400;
+}
+a {
+  color: #a0c4ff;
+}
+strong {
+  color: #e0e0e0;
+}
+.indented {
+  text-indent: 2rem;
+}
+.ticker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #16213e;
+  padding: 0.5rem 0;
+  z-index: 999;
+  overflow: hidden;
+}
+.ticker span {
+  display: inline-block;
+  color: #a0c4ff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  animation: ticker 8s linear infinite;
+}
+@keyframes ticker {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.btn {
+  background: #0f3460;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: #a0c4ff;
+  color: #1a1a2e;
+}

@@ -4,109 +4,11 @@
     <meta charset="UTF-8" />
     <title>HTML Notes</title>
     <link href="favicon.ico" rel="icon" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        font-family: "Barlow", sans-serif;
-        background: #1a1a2e;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        min-height: 100vh;
-        margin: 0;
-        padding: 4rem 0 2rem 0;
-      }
-      .card {
-        background: #16213e;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-        text-align: left;
-        max-width: 800px;
-        width: 100%;
-        padding: 2rem 2rem 3rem 2rem;
-      }
-      img {
-        max-width: 100%;
-        border-radius: 8px;
-        margin: 0.5rem 0;
-        color: #e0e0e0;
-      }
-      .example-img {
-        width: 300px;
-      }
-      input {
-        display: block;
-        margin: 0.5rem 0 1rem 0;
-        background: #0f3460;
-        border: 1px solid #444;
-        color: #e0e0e0;
-        padding: 4px 8px;
-        border-radius: 4px;
-      }
-      .source {
-        font-size: 0.85rem;
-        color: #888;
-        font-style: italic;
-        margin-bottom: 1rem;
-      }
-      h1 {
-        color: #e0e0e0;
-        font-weight: 700;
-      }
-      h2 {
-        color: #e0e0e0;
-        font-weight: 700;
-      }
-      h3 {
-        color: #a0c4ff;
-        margin-top: 1.5rem;
-      }
-      p {
-        color: #b0b0b0;
-        font-weight: 400;
-      }
-      a {
-        color: #a0c4ff;
-      }
-      strong {
-        color: #e0e0e0;
-      }
-      .indented {
-        text-indent: 2rem;
-      }
-      .ticker {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: #16213e;
-        padding: 0.5rem 0;
-        z-index: 999;
-        overflow: hidden;
-      }
-      .ticker span {
-        display: inline-block;
-        color: #a0c4ff;
-        font-weight: 700;
-        font-size: 1.5rem;
-        white-space: nowrap;
-        animation: ticker 8s linear infinite;
-      }
-      @keyframes ticker {
-        0% {
-          transform: translateX(100vw);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="ticker">
@@ -457,11 +359,13 @@
         elements.
       </p>
       <p>Example:</p>
-      <p>&lt;div&gt;</p>
+      <p><strong>&lt;div&gt;</strong></p>
       <p class="indented">
-        &lt;p&gt;Example paragraph within div element.&lt;/p&gt;
+        <strong
+          >&lt;p&gt;Example paragraph within div element.&lt;/p&gt;</strong
+        >
       </p>
-      <p>&lt;/div&gt;</p>
+      <p><strong>&lt;/div&gt;</strong></p>
       <p>
         You will mainly use the <strong>div</strong> element when you want to
         group HTML elements that will share a set of CSS styles. You will learn
@@ -478,11 +382,13 @@
         appropriate than a div element.
       </p>
       <p>Example:</p>
-      <p>&lt;section&gt;</p>
+      <p><strong>&lt;section&gt;</strong></p>
       <p class="indented">
-        &lt;p&gt;Example paragraph within section element.&lt;/p&gt;
+        <strong
+          >&lt;p&gt;Example paragraph within section element.&lt;/p&gt;</strong
+        >
       </p>
-      <p>&lt;/section&gt;</p>
+      <p><strong>&lt;/section&gt;</strong></p>
       <p>
         The <strong>section</strong> element has semantic meaning over the div
         element which is not semantic. Semantics are the meaning of words or
@@ -491,6 +397,148 @@
         the browser will pick up its semantic meaning and understand to treat
         this as a section - on desktops, mobiles, you name it.
       </p>
+
+      <h3>ID and CLASS Attribute</h3>
+      <p>The id attribute adds a unique identifier to an HTML element.</p>
+      <p>Example:</p>
+      <p>
+        <strong
+          >&lt;h1 id="title"&gt;Movie Review Page&lt;/h1&gt; &lt;h2
+          id="subtitle"&gt;Shrek 2&lt;/h2&gt;</strong
+        >
+      </p>
+      <p>
+        You can reference the id name of title within your JavaScript or CSS.
+        Here's a CSS example referencing the id of title to change the text
+        color to red.
+      </p>
+      <p><strong>#title { color: blue; }</strong></p>
+      <p>
+        The hash symbol (<strong>#</strong>) in front of title, tells the
+        computer you want to target an id with that value. id names should not
+        be used more than once, and they should always be unique. Another thing
+        to note about id values, is that they cannot have spaces in them.
+      </p>
+      <p>
+        Browsers will see this space as part of the id which will lead to
+        unwanted issues when it comes to styling and scripting. id attribute
+        values should only contain letters, digits, underscores, and dashes.
+      </p>
+      <p>
+        In contrast to the id attribute, the class attribute value does not need
+        to be unique and can contain spaces.
+      </p>
+      <p>Here is an example of applying a class called box to a div element.</p>
+      <p><strong>&lt;div class="box"&gt;&lt;/div&gt;</strong></p>
+      <p>
+        If you wanted to add multiple class names to an element, you can do so
+        by separating the names by a space. Here is an updated example applying
+        multiple classes to a div element.
+      </p>
+      <p><strong>&lt;div class="box red-box"&gt;&lt;/div&gt;</strong></p>
+
+      <h3>HTML Entities</h3>
+      <p>
+        An HTML entity, or character reference, is a set of characters used to
+        represent a reserved character in HTML.
+      </p>
+      <p>
+        Let's say you wanted to display the text This is an &lt;img /&gt;
+        element on the screen. If you use the code currently in the editor, it
+        won't display the desired result. Even if you added src and alt
+        attributes to the example, it would show an image in the middle of the
+        paragraph. Not the desired result.
+      </p>
+      <p>
+        When the HTML parser sees the less than (&lt;) symbol followed by an
+        HTML tag name, it interprets that as an HTML element.
+      </p>
+      <p>
+        To fix this issue, you can use
+        <strong>&amp;lt; and &amp;gt;</strong> entities.
+      </p>
+      <p>Example:</p>
+      <p>
+        <strong>
+          &lt;p&gt;This is an &amp;lt;img /&amp;gt; element&lt;/p&gt; = This is
+          an &lt;img /&gt; element
+        </strong>
+      </p>
+      <h3>Named character reference</h3>
+      <p>
+        These types of character start with an ampersand sign
+        <strong>(&)</strong> and end with a semicolon <strong>(;)</strong>. By
+        using a named character reference, the HTML parser will not confuse this
+        with an actual HTML element.
+      </p>
+      <h3>Decimal numeric reference</h3>
+      <p>
+        This character reference starts with an ampersand sign and hash symbol
+        <strong>(#)</strong>, followed by one or more decimal digits, followed
+        by a semicolon.
+      </p>
+      <p>
+        Here is an example of using the decimal numeric reference for the less
+        than symbol.
+      </p>
+      <p>
+        <strong>
+          &amp;#169; = &#169;<br />
+          &amp;#174 = &#174;
+        </strong>
+      </p>
+      <h3>Hexadecimal numeric reference</h3>
+      <p>
+        This character reference starts with an <strong>ampersand sign</strong>,
+        <strong>hash symbol</strong>, and the letter <strong>x</strong>. Then it
+        is followed by one or more ASCII hex digits and ends with a semicolon.
+      </p>
+      <p>
+        <strong>
+          &amp;#x20AC; = &#x20AC;<br />
+          &amp;#x03A9; = &#x03A9;
+        </strong>
+      </p>
+
+      <h3>SCRIPT element</h3>
+      <p>
+        The script element is used to embed executable code. Most developers
+        will use this to execute JavaScript code. JavaScript is used to add
+        interactivity to your web pages. Common examples of using JavaScript
+        include interactive games, image sliders, and dynamic forms that
+        validate user input in real-time.
+      </p>
+      <p>Example:</p>
+      <p>
+        <strong>
+          &lt;script&gt;<br />
+          alert("Welcome to freeCodeCamp");<br />
+          &lt;/script&gt;
+        </strong>
+      </p>
+      <p>
+        While you can technically write all of your JavaScript code inside the
+        script tags, it is considered best practice to link to an external
+        JavaScript file instead. Here is an example of using the script element
+        to link to an external JavaScript file:
+      </p>
+      <p>
+        <strong
+          >&lt;script
+          src="path-to-javascript-file.js"&gt;&lt;/script&gt;</strong
+        >
+      </p>
+      <p>
+        The src attribute is used here to specify the location for that external
+        JavaScript file. src stands for "source". The reason why it is not
+        encouraged to place all of your JavaScript inside the HTML document is
+        because of separation of concerns. Separation of concerns is a design
+        principle where you separate your programs into distinct sections and
+        have each section address a separate concern. In this case, we want to
+        separate our JavaScript code from our HTML code.
+      </p>
+
+      <button class="btn">Random Button</button>
     </div>
   </body>
 </html>
