@@ -19,6 +19,7 @@ body {
   max-width: 800px;
   width: 100%;
   padding: 2rem 2rem 3rem 2rem;
+  overflow: hidden;
 }
 img {
   max-width: 100%;
@@ -128,9 +129,9 @@ code {
   font-size: 0.9em;
 }
 pre {
-  padding: 1rem;
-  border-radius: 8px;
   overflow-x: auto;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 pre code {
