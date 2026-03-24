@@ -111,7 +111,8 @@ strong {
   color: #1a1a2e;
 }
 video {
+  display: block;
   max-width: 100%;
   border-radius: 8px;
-  margin: 0.5rem 0;
+  margin: 0.5rem auto;
 }

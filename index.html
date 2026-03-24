@@ -696,11 +696,7 @@
       </p>
       <p>Example:</p>
       <p>
-        <strong>
-          &lt;audio
-          src="https://cdn.freecodecamp.org/curriculum/js-music-player/cruising-for-a-musing.mp3"
-          controls&gt;&lt;/audio&gt;
-        </strong>
+        <strong> &lt;audio src="Mundo.mp3" controls&gt;&lt;/audio&gt; </strong>
       </p>
       <audio src="Mundo.mp3" controls></audio>
       <p>
@@ -725,9 +721,7 @@
       </p>
       <p>
         <strong>
-          &lt;audio
-          src="https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3"
-          loop controls &gt;&lt;/audio&gt;
+          &lt;audio src="Kabisado.mp3" loop controls &gt;&lt;/audio&gt;
         </strong>
       </p>
       <audio src="Kabisado.mp3" loop controls></audio>
@@ -740,11 +734,10 @@
         audio in a muted state. Here's an example of using the muted attribute.
       </p>
       <p>
-        &lt;audio
-        src="https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3"
-        loop controls muted &gt;&lt;/audio&lt;
+        &lt;audio src="Sariling Multo.mp3" loop controls muted
+        &gt;&lt;/audio&lt;
       </p>
-      <audio src="Sariling Multo.mp3" loop controls muted></audio>
+      <audio src="Sariling Multo.mp3" autoplay loop controls muted></audio>
 
       <p>
         When it comes to audio file types, there are differences in which
@@ -757,7 +750,7 @@
         element:
       </p>
       <img src="audiosrc.png" alt="Syntax for other source elements." />
-    
+
       <p>
         The browser will first start with the ogg type, and if it can't play the
         audio, then it'll move down to the next type in the list.
@@ -766,18 +759,19 @@
       <h3>Video Element</h3>
 
       <p>
-        All the attributes we have learned so far are also supported in the video
-        element.
+        All the attributes we have learned so far are also supported in the
+        video element.
       </p>
       <p>Example:</p>
-      <p><strong>
-        &lt;video<br />
-        src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"<br />
-        loop<br />
-        controls<br />
-        muted<br />
-        width="400"<br />
-        &gt;&lt;/video&gt;
+      <p>
+        <strong>
+          &lt;video<br />
+          src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"<br />
+          loop<br />
+          controls<br />
+          muted<br />
+          width="400"<br />
+          &gt;&lt;/video&gt;
         </strong>
       </p>
       <p>
@@ -785,37 +779,38 @@
         video tag so the video plays automatically.
       </p>
       <p>
-        <strong>NOTE:</strong> The width attribute is being used here to make the
-        video smaller and fit better in the preview window.
+        <strong>NOTE:</strong> The width attribute is being used here to make
+        the video smaller and fit better in the preview window.
       </p>
       <p>
-        If you wanted to display an image while the video is downloading, you can
-        use the <strong>poster</strong> attribute. This attribute is not available
-        for audio elements and is unique to the video element.
+        If you wanted to display an image while the video is downloading, you
+        can use the <strong>poster</strong> attribute. This attribute is not
+        available for audio elements and is unique to the video element.
       </p>
       <p>Example:</p>
-      <p><strong>
-        &lt;video<br />
-        src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"<br />
-        loop<br />
-        controls<br />
-        muted<br />
-        poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"<br />
-        width="400"<br />
-        &gt;&lt;/video&gt;
+      <p>
+        <strong>
+          &lt;video<br />
+          src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"<br />
+          loop<br />
+          controls<br />
+          muted<br />
+          poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"<br />
+          width="400"<br />
+          &gt;&lt;/video&gt;
         </strong>
       </p>
-      <video
-      src="Noice.mp4"
-      autoplay
-      controls
-      muted
-      width="400"
-      poster="Noice.jpeg"
+      <video class="video"
+        src="Noice.mp4"
+        autoplay
+        controls
+        muted
+        width="400"
+        poster="Noice.jpeg"
       ></video>
       <p>
-        You can also use the source element inside a video element, just like you
-        did with the audio element. This lets you provide the same video in
+        You can also use the source element inside a video element, just like
+        you did with the audio element. This lets you provide the same video in
         multiple formats, and the browser will choose the first one it can play.
       </p>
     </div>
