@@ -31,7 +31,8 @@ A personal HTML reference page documenting key concepts learned from [freeCodeCa
 ## Chapter 5
 - Meta Description
 - Open Graph Tags
-
+- Audio Element
+- Video Element
 ## Live Demo
 [View the page here](https://idan3e5.github.io/HTML-lessons/)
 
