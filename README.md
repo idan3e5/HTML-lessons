@@ -31,15 +31,29 @@ A personal HTML reference page documenting key concepts learned from [freeCodeCa
 ## Chapter 5
 - Meta Description
 - Open Graph Tags
-- Audio Element
-- Video Element
-## Chapter 6 
+    - Title OG Property
+    - Type OG Property
+    - Image OG Property
+    - URL OG Property
+## Chapter 6
+- Audio and Video Element
+    - Audio Element
+    - Loop Attribute
+    - Muted Attribute
+    - Video Element
+## Chapter 7 
 - Image Optimization
     - Size
     - Format
     - Compression
 - Image Licenses
+    - Permissive Licenses
+    - Public Domain
 - SVGs (Scalable Vector Graphics)
+    - Benefits of SVGs
+    - SVG Elements
+    - When to use
+
 ## Live Demo
 [View the page here](https://idan3e5.github.io/HTML-lessons/)
 
