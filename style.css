@@ -128,17 +128,12 @@ code {
   font-size: 0.9em;
 }
 pre {
-  background: #0f3460;
-  border-left: 3px solid #a0c4ff;
-  border-radius: 6px;
   padding: 1rem;
+  border-radius: 8px;
   overflow-x: auto;
-  margin: 0.75rem 0;
 }
+
 pre code {
-  background: none;
-  padding: 0;
-  color: #ffd6a5;
-  font-size: 0.9em;
-  line-height: 1.6;
+  display: block;
+  white-space: pre;
 }
