@@ -110,3 +110,8 @@ strong {
   background: #a0c4ff;
   color: #1a1a2e;
 }
+video {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}

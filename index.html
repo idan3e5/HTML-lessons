@@ -757,66 +757,67 @@
         element:
       </p>
       <img src="audiosrc.png" alt="Syntax for other source elements." />
+    
+      <p>
+        The browser will first start with the ogg type, and if it can't play the
+        audio, then it'll move down to the next type in the list.
+      </p>
+
+      <h3>Video Element</h3>
+
+      <p>
+        All the attributes we have learned so far are also supported in the video
+        element.
+      </p>
+      <p>Example:</p>
+      <p><strong>
+        &lt;video<br />
+        src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"<br />
+        loop<br />
+        controls<br />
+        muted<br />
+        width="400"<br />
+        &gt;&lt;/video&gt;
+        </strong>
+      </p>
+      <p>
+        You can also add the <strong>autoplay</strong> attribute to the opening
+        video tag so the video plays automatically.
+      </p>
+      <p>
+        <strong>NOTE:</strong> The width attribute is being used here to make the
+        video smaller and fit better in the preview window.
+      </p>
+      <p>
+        If you wanted to display an image while the video is downloading, you can
+        use the <strong>poster</strong> attribute. This attribute is not available
+        for audio elements and is unique to the video element.
+      </p>
+      <p>Example:</p>
+      <p><strong>
+        &lt;video<br />
+        src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"<br />
+        loop<br />
+        controls<br />
+        muted<br />
+        poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"<br />
+        width="400"<br />
+        &gt;&lt;/video&gt;
+        </strong>
+      </p>
+      <video
+      src="Noice.mp4"
+      autoplay
+      controls
+      muted
+      width="400"
+      poster="Noice.jpeg"
+      ></video>
+      <p>
+        You can also use the source element inside a video element, just like you
+        did with the audio element. This lets you provide the same video in
+        multiple formats, and the browser will choose the first one it can play.
+      </p>
     </div>
-    <p>
-      The browser will first start with the ogg type, and if it can't play the
-      audio, then it'll move down to the next type in the list.
-    </p>
-
-    <h3>Video Element</h3>
-
-    <p>
-      All the attributes we have learned so far are also supported in the video
-      element.
-    </p>
-    <p>Example:</p>
-    <p><strong>
-      &lt;video<br />
-      src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"<br />
-      loop<br />
-      controls<br />
-      muted<br />
-      width="400"<br />
-      &gt;&lt;/video&gt;
-      </strong>
-    </p>
-    <p>
-      You can also add the <strong>autoplay</strong> attribute to the opening
-      video tag so the video plays automatically.
-    </p>
-    <p>
-      <strong>NOTE:</strong> The width attribute is being used here to make the
-      video smaller and fit better in the preview window.
-    </p>
-    <p>
-      If you wanted to display an image while the video is downloading, you can
-      use the <strong>poster</strong> attribute. This attribute is not available
-      for audio elements and is unique to the video element.
-    </p>
-    <p>Example:</p>
-    <p><strong>
-      &lt;video<br />
-      src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"<br />
-      loop<br />
-      controls<br />
-      muted<br />
-      poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"<br />
-      width="400"<br />
-      &gt;&lt;/video&gt;
-      </strong>
-    </p>
-    <video
-    src="Noice.mp4"
-    autoplay
-    controls
-    muted
-    width="400"
-    poster="Noice.jpeg"
-    ></video>
-    <p>
-      You can also use the source element inside a video element, just like you
-      did with the audio element. This lets you provide the same video in
-      multiple formats, and the browser will choose the first one it can play.
-    </p>
   </body>
 </html>
