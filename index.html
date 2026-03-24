@@ -29,10 +29,9 @@
       </p>
       <p>Here is a small example using HTML elements:</p>
       <p>
-        <strong
-          >&lt;h1&gt;Main heading element&lt;/h1&gt; = Main heading element<br /><br />&lt;p&gt;I
-          am a paragraph element.&lt;/p&gt; = I am paragraph element.</strong
-        >
+        <code
+          >&lt;h1&gt;Main heading element&lt;/h1&gt;</code> = Main heading element<br /><br /><code>&lt;p&gt;I
+          am a paragraph element.&lt;/p&gt;</code> = I am paragraph element.
       </p>
 
       <h3>Elements</h3>
@@ -51,8 +50,8 @@
         accepted convention and best practice to write them in lowercase.
       </p>
       <p>
-        Here is a closer look at just the opening and closing paragraph tags:<br /><br /><strong
-          >&lt;p&gt;EXAMPLE&lt;/p&gt; = EXAMPLE</strong
+        Here is a closer look at just the opening and closing paragraph tags:<br /><br /><code
+          >&lt;p&gt;EXAMPLE&lt;/p&gt; = EXAMPLE</code
         >
       </p>
 
@@ -64,16 +63,16 @@
         These are known as void elements.
       </p>
       <p>
-        Here is an example of an image element which is a void element:<br /><br /><strong
-          >&lt;img&gt;</strong
+        Here is an example of an image element which is a void element:<br /><br /><code
+          >&lt;img&gt;</code
         >
       </p>
       <p>
         Notice that this image element does not have the closing tag and it does
         not have any content. Void elements cannot have any content and only
         have a start tag.<br /><br />Sometimes you will see void elements that
-        use a <strong>/</strong> before the <strong>></strong> like this:<br /><br /><strong
-          >&lt;img /&gt;</strong
+        use a <strong>/</strong> before the <strong>></strong> like this:<br /><br /><code
+          >&lt;img /&gt;</code
         >
       </p>
       <p>
@@ -102,7 +101,7 @@
         specify how the element should behave. Here is the basic syntax for an
         attribute:
       </p>
-      <p><strong>&lt;element attribute="value"&gt;&lt;/element&gt;</strong></p>
+      <p><code>&lt;element attribute="value"&gt;&lt;/element&gt;</code></p>
       <p>
         The attribute name is followed by an <strong>equal sign (=)</strong> and
         a value in quotes. The value can be a string or a number, depending on
@@ -116,9 +115,9 @@
         where to open the link.
       </p>
       <p>
-        <strong
+        <code
           >&lt;a href="https://www.freecodecamp.org" target="_blank"&gt;Visit
-          freeCodeCamp&lt;/a&gt;</strong
+          freeCodeCamp&lt;/a&gt;</code
         >
       </p>
       <a href="https://www.freecodecamp.org" target="_blank"
@@ -137,13 +136,13 @@
         - which is used to specify the source of an image and provide
         alternative descriptive text for the image, respectively.
       </p>
-      <p>
-        <strong
-          >Example:<br /><br />
+      <p>Example:
+        <pre><code
+          ><br /><br />
           &lt;img<br />
           src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg"<br />
-          alt="Cats running in the dirt." <br />/&gt;</strong
-        >
+          alt="Cats running in the dirt." <br />/&gt;</code
+        ></pre>
       </p>
       <p>Here is an example of a <strong>working</strong> image:</p>
       <img
@@ -174,9 +173,9 @@
         Some attributes are a little unique with their syntax like the checked
         attribute.
       </p>
-      <p><strong>WITH &lt;input type="checkbox" checked /&gt;</strong></p>
+      <p><code>WITH &lt;input type="checkbox" checked /&gt;</code></p>
       <input type="checkbox" checked />
-      <p><strong>WITHOUT &lt;input type="checkbox" /&gt;</strong></p>
+      <p><code>WITHOUT &lt;input type="checkbox" /&gt;</code></p>
       <input type="checkbox" />
       <p>
         In the following example, we have an <strong>input</strong> element with
@@ -200,9 +199,9 @@
         state of an element, such as whether it is disabled, read-only, or
         required.
       </p>
-      <p><strong>WITH &lt;input type="text" disabled&gt;</strong></p>
+      <p><code>WITH &lt;input type="text" disabled&gt;</code></p>
       <input type="text" disabled />
-      <p><strong>WITHOUT &lt;input type="text"&gt;</strong></p>
+      <p><code>WITHOUT &lt;input type="text"&gt;</code></p>
       <input type="text" />
       <p>
         <strong>HTML</strong> has many attributes that can be used to customize
@@ -220,7 +219,7 @@
         an external CSS file:
       </p>
       <p>
-        <strong>&lt;link rel="stylesheet" href="./styles.css" /&gt;</strong>
+        <code>&lt;link rel="stylesheet" href="./styles.css" /&gt;</code>
       </p>
       <p>
         The <strong>rel</strong> attribute is used to specify the relationship
@@ -259,14 +258,14 @@
       </p>
       <p>Example:</p>
       <p>
-        <strong>
+        <pre><code>
           &lt;link rel="preconnect" href="https://fonts.googleapis.com" /&gt;<br />
           &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin
           /&gt;<br />
           &lt;link
           href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
           rel="stylesheet"/&gt;
-        </strong>
+        </code></pre>
       </p>
 
       <h3>Favicon</h3>
@@ -276,7 +275,7 @@
       </p>
       <p>Example:</p>
       <p>
-        <strong> &lt;link rel="icon" href="favicon.ico" /&gt; </strong>
+        <code> &lt;link rel="icon" href="favicon.ico" /&gt; </code>
       </p>
       <p>
         A favicon, which is short for favorite icon, is a small icon typically
@@ -343,7 +342,7 @@
         Here is an example of using the meta element with the charset attribute
         to set the character encoding to UTF-8:
       </p>
-      <p><strong>&lt;meta charset="UTF-8" /&gt;</strong></p>
+      <p><code>&lt;meta charset="UTF-8" /&gt;</code></p>
       <p>
         By setting the character encoding to UTF-8, it will ensure that the
         accented "e" character (é) is displayed correctly on the page.
@@ -360,13 +359,13 @@
         elements.
       </p>
       <p>Example:</p>
-      <p><strong>&lt;div&gt;</strong></p>
+      <p><code>&lt;div&gt;</code></p>
       <p class="indented">
-        <strong
-          >&lt;p&gt;Example paragraph within div element.&lt;/p&gt;</strong
+        <code
+          >&lt;p&gt;Example paragraph within div element.&lt;/p&gt;</code
         >
       </p>
-      <p><strong>&lt;/div&gt;</strong></p>
+      <p><code>&lt;/div&gt;</code></p>
       <p>
         You will mainly use the <strong>div</strong> element when you want to
         group HTML elements that will share a set of CSS styles. You will learn
@@ -384,13 +383,13 @@
         appropriate than a div element.
       </p>
       <p>Example:</p>
-      <p><strong>&lt;section&gt;</strong></p>
+      <p><code>&lt;section&gt;</code></p>
       <p class="indented">
-        <strong
-          >&lt;p&gt;Example paragraph within section element.&lt;/p&gt;</strong
+        <code
+          >&lt;p&gt;Example paragraph within section element.&lt;/p&gt;</code
         >
       </p>
-      <p><strong>&lt;/section&gt;</strong></p>
+      <p><code>&lt;/section&gt;</code></p>
       <p>
         The <strong>section</strong> element has semantic meaning over the div
         element which is not semantic. Semantics are the meaning of words or
@@ -404,9 +403,9 @@
       <p>The id attribute adds a unique identifier to an HTML element.</p>
       <p>Example:</p>
       <p>
-        <strong
+        <code
           >&lt;h1 id="title"&gt;Movie Review Page&lt;/h1&gt; &lt;h2
-          id="subtitle"&gt;Shrek 2&lt;/h2&gt;</strong
+          id="subtitle"&gt;Shrek 2&lt;/h2&gt;</code
         >
       </p>
       <p>
@@ -414,7 +413,7 @@
         Here's a CSS example referencing the id of title to change the text
         color to red.
       </p>
-      <p><strong>#title { color: blue; }</strong></p>
+      <p><code>#title { color: blue; }</code></p>
       <p>
         The hash symbol (<strong>#</strong>) in front of title, tells the
         computer you want to target an id with that value. id names should not
@@ -431,13 +430,13 @@
         to be unique and can contain spaces.
       </p>
       <p>Here is an example of applying a class called box to a div element.</p>
-      <p><strong>&lt;div class="box"&gt;&lt;/div&gt;</strong></p>
+      <p><code>&lt;div class="box"&gt;&lt;/div&gt;</code></p>
       <p>
         If you wanted to add multiple class names to an element, you can do so
         by separating the names by a space. Here is an updated example applying
         multiple classes to a div element.
       </p>
-      <p><strong>&lt;div class="box red-box"&gt;&lt;/div&gt;</strong></p>
+      <p><code>&lt;div class="box red-box"&gt;&lt;/div&gt;</code></p>
 
       <h3>HTML Entities</h3>
       <p>
@@ -461,10 +460,10 @@
       </p>
       <p>Example:</p>
       <p>
-        <strong>
+        <code>
           &lt;p&gt;This is an &amp;lt;img /&amp;gt; element&lt;/p&gt; = This is
           an &lt;img /&gt; element
-        </strong>
+        </code>
       </p>
       <h3>Named Character Reference</h3>
       <p>
@@ -484,10 +483,10 @@
         than symbol.
       </p>
       <p>
-        <strong>
+        <code>
           &amp;#169; = &#169;<br />
           &amp;#174 = &#174;
-        </strong>
+        </code>
       </p>
       <h3>Hexadecimal Numeric Reference</h3>
       <p>
@@ -496,10 +495,10 @@
         is followed by one or more ASCII hex digits and ends with a semicolon.
       </p>
       <p>
-        <strong>
+        <code>
           &amp;#x20AC; = &#x20AC;<br />
           &amp;#x03A9; = &#x03A9;
-        </strong>
+        </code>
       </p>
 
       <h3>SCRIPT Element</h3>
@@ -512,11 +511,11 @@
       </p>
       <p>Example:</p>
       <p>
-        <strong>
+        <code>
           &lt;script&gt;<br />
           alert("Welcome to freeCodeCamp");<br />
           &lt;/script&gt;
-        </strong>
+        </code>
       </p>
       <p>
         While you can technically write all of your JavaScript code inside the
@@ -525,9 +524,9 @@
         to link to an external JavaScript file:
       </p>
       <p>
-        <strong
+        <code
           >&lt;script
-          src="path-to-javascript-file.js"&gt;&lt;/script&gt;</strong
+          src="path-to-javascript-file.js"&gt;&lt;/script&gt;</code
         >
       </p>
       <p>
@@ -563,11 +562,11 @@
         for a gardening site:
       </p>
       <p>
-        <strong>
+        <pre><code>
           &lt;meta name="description" content="Discover expert tips and
           techniques for gardening in small spaces, choosing the right plants,
           and maintaining a thriving garden." /&gt;
-        </strong>
+        </code></pre>
       </p>
       <p>
         By setting the <strong>name</strong> attribute to
@@ -607,8 +606,8 @@
         homepage:
       </p>
       <p>
-        <strong
-          >&lt;meta content="freeCodeCamp.org" property="og:title" /&gt;</strong
+        <code
+          >&lt;meta content="freeCodeCamp.org" property="og:title" /&gt;</code
         >
       </p>
       <p>
@@ -621,7 +620,7 @@
         Here is an example of using the OG type for the freeCodeCamp homepage:
       </p>
       <p>
-        <strong>&lt;meta property="og:type" content="website" /&gt;</strong>
+        <code>&lt;meta property="og:type" content="website" /&gt;</code>
       </p>
       <p>
         The <strong>type</strong> property is used to represent the type of
@@ -634,11 +633,11 @@
         homepage:
       </p>
       <p>
-        <strong>
+        <code>
           &lt;meta
           content="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
           property="og:image" /&gt;
-        </strong>
+        </code>
       </p>
       <p>
         In this example, the open graph image is pointing to the freeCodeCamp
@@ -658,10 +657,10 @@
         Here is an example of setting the OG url for the freeCodeCamp homepage:
       </p>
       <p>
-        <strong>
+        <code>
           &lt;meta property="og:url" content="https://www.freecodecamp.org"
           /&gt;
-        </strong>
+        </code>
       </p>
       <p>
         There are many more OG properties that you can set, like
@@ -702,7 +701,7 @@
       </p>
       <p>Example:</p>
       <p>
-        <strong> &lt;audio src="Mundo.mp3" controls&gt;&lt;/audio&gt; </strong>
+        <code> &lt;audio src="Mundo.mp3" controls&gt;&lt;/audio&gt; </code>
       </p>
       <audio src="Mundo.mp3" controls></audio>
       <p>
@@ -726,9 +725,9 @@
         continuously.
       </p>
       <p>
-        <strong>
+        <code>
           &lt;audio src="Kabisado.mp3" loop controls &gt;&lt;/audio&gt;
-        </strong>
+        </code>
       </p>
       <audio src="Kabisado.mp3" loop controls></audio>
 
@@ -740,10 +739,10 @@
         audio in a muted state. Here's an example of using the muted attribute.
       </p>
       <p>
-        <strong>
+        <code>
           &lt;audio src="Sariling Multo.mp3" loop controls muted
           &gt;&lt;/audio&lt;
-        </strong>
+        </code>
       </p>
       <audio src="Sariling Multo.mp3" loop controls muted></audio>
 
@@ -775,7 +774,7 @@
       </p>
       <p>Example:</p>
       <p>
-        <strong>
+        <pre><code>
           &lt;video<br />
           src="Noice.mp4"<br />
           loop<br />
@@ -783,7 +782,7 @@
           muted<br />
           width="400"<br />
           &gt;&lt;/video&gt;
-        </strong>
+        </code></pre>
       </p>
       <p>
         You can also add the <strong>autoplay</strong> attribute to the opening
@@ -800,7 +799,7 @@
       </p>
       <p>Example:</p>
       <p>
-        <strong>
+        <pre><code>
           &lt;video<br />
           src="Noice.mp4"<br />
           loop<br />
@@ -809,7 +808,7 @@
           poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"<br />
           width="400"<br />
           &gt;&lt;/video&gt;
-        </strong>
+        </code></pre>
       </p>
       <video
         class="video"
@@ -931,15 +930,15 @@
         </p>
 
         <p><strong>SVG Code Sample: </strong></p>
-        <p>
+        <p><pre><code>
           &lt;svg width="24" height="24" viewBox="0 0 24 24" fill="red"&gt;<br />
           &lt;path d="M12 21s-6-4.35-9.33-8.22C-.5 7.39 3.24 1 8.4 4.28 10.08
           5.32 12 7.5 12 7.5s1.92-2.18 3.6-3.22C20.76 1 24.5 7.39 21.33 12.78 18
           16.65 12 21 12 21z" &gt;&lt;/path&gt; <br />
           &lt;/svg&gt;
-        </p>
+        </p><code></pre>
 
-        <p>Output sample:</p>
+        <p><strong>Output sample:</strong></p>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="red">
           <path
             d="M12 21s-6-4.35-9.33-8.22C-.5 7.39 3.24 1 8.4 4.28 10.08 5.32 12 
