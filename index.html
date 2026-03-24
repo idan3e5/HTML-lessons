@@ -800,7 +800,8 @@
           &gt;&lt;/video&gt;
         </strong>
       </p>
-      <video class="video"
+      <video
+        class="video"
         src="Noice.mp4"
         autoplay
         controls
@@ -813,6 +814,109 @@
         you did with the audio element. This lets you provide the same video in
         multiple formats, and the browser will choose the first one it can play.
       </p>
+
+      <h2>Chapter 6</h2>
+      <h3>Image Optimization</h3>
+      <p>
+        <strong>Size</strong> - Scale your image to match the size it will be
+        displayed at. Serving a large image that's styled small wastes
+        bandwidth.
+      </p>
+      <p>
+        <strong>Format</strong> - PNG and JPG are common but outdated. Prefer
+        modern formats like WEBP or AVIF for better optimization (unless
+        supporting older browsers).
+      </p>
+      <section>
+        <p>
+          <strong>Compression</strong> - Use compression tools to reduce file
+          size. Keep in mind:
+        </p>
+        <ul>
+          <li>
+            <strong>Lossless</strong> (e.g. PNG) — compresses without quality
+            loss, original data is preserved
+          </li>
+          <lil
+            ><strong>Lossy</strong> (e.g. JPG) — permanently discards data each
+            time it's re-saved, degrading quality over time</lil
+          >
+        </ul>
+      </section>
+      <h3>Image Licenses</h3>
+      <section>
+        <p>
+          By default, images are all rights reserved and owned by the creator.
+          You can only use them if you:
+        </p>
+        <ol>
+          <li>Get written permission from the copyright holder</li>
+          <li>Purchase a license</li>
+          <li>
+            Use it under fair use (must be limited and transformative, e.g.
+            commentary, parody)
+          </li>
+        </ol>
+      </section>
+      <p>
+        <strong>Permissive Licenses</strong> (e.g. Creative Commons, BSD) are
+        free to use but with conditions. Always read the license; you may be
+        required to keep your site open source or avoid modifying the image.
+      </p>
+      <p>
+        <strong>Public Domain</strong> means no copyright and no restrictions.
+        Images under the Creative Commons 0 (CC0) license fall into this
+        category.
+      </p>
+      <p>
+        <strong>Tip:</strong> Search engines let you filter by license. Sites
+        like Pixabay and Unsplash offer free-to-use images. Always check
+        licensing before using an image.
+      </p>
+      <h3>SVGs (Scalable Vector Graphics)</h3>
+      <p>
+        Common formats like PNG and JPG are raster-based (pixel-based). Their
+        downside is they become pixelated or blurry when scaled up.
+      </p>
+      <p>
+        SVGs are vector-based, meaning they use paths and equations instead of
+        pixels. This allows them to scale to any size without losing quality.
+      </p>
+      <section>
+        <p>Additional benefits of SVGs:</p>
+        <ul>
+          <li>
+            Data is stored in XML, so you can use them directly in HTML with the
+            &lt;svg&gt; element
+          </li>
+          <li>
+            Colors and properties can be changed programmatically via attributes
+            like fill
+          </li>
+        </ul>
+        <p>Key SVG elements:</p>
+        <ul>
+          <li>&lt;svg&gt; - the container for the entire drawing</li>
+          <li>&lt;circle&gt; - draws circles</li>
+          <li>&lt;path&gt; - draws lines and curves</li>
+          <li>
+            Each element has attributes controlling its appearance and position
+          </li>
+        </ul>
+        <p>When to use SVGs:</p>
+        <ul>
+          <li>
+            <strong>Icons</strong> (e.g. social media icons, custom bullet
+            points)
+          </li>
+          <li><strong>Logos</strong> (scales perfectly for any screen size)</li>
+          <li>Any graphic that needs to adapt to responsive layouts</li>
+        </ul>
+        <p>
+          <strong>Tip:</strong> Open any SVG file in a text editor to view and
+          edit its code directly.
+        </p>
+      </section>
     </div>
   </body>
 </html>

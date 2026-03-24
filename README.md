@@ -33,6 +33,13 @@ A personal HTML reference page documenting key concepts learned from [freeCodeCa
 - Open Graph Tags
 - Audio Element
 - Video Element
+## Chapter 6 
+- Image Optimization
+    - Size
+    - Format
+    - Compression
+- Image Licenses
+- SVGs (Scalable Vector Graphics)
 ## Live Demo
 [View the page here](https://idan3e5.github.io/HTML-lessons/)
 
