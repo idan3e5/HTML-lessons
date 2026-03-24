@@ -28,6 +28,9 @@ A personal HTML reference page documenting key concepts learned from [freeCodeCa
 - Decimal Numeral Reference
 - Hexadecimal Numeral Reference
 - Script element
+## Chapter 5
+- Meta Description
+- Open Graph Tags
 
 ## Live Demo
 [View the page here](https://idan3e5.github.io/HTML-lessons/)
